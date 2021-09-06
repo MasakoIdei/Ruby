@@ -9,19 +9,21 @@ puts "何回繰り返しますか？？"
 input = gets.to_i 　　#計算を繰り返したい回数を取得
 i = 1
 
+#inputの値がiの値以下の場合処理を繰り返す(＝iとinputの値が同じになると終了する）
+while i <= input do
 
-while i <= input do  #inputの値がiの値以下の場合処理を繰り返す(＝iとinputの値が同じになると終了する）
-puts "#{i}回目の計算"
-puts "2つの値を入力してください"
-a = gets.to_i
-b = gets.to_i
+  puts "#{i}回目の計算"
+  puts "2つの値を入力してください"
 
-puts "a+b=#{a+b}"
-puts "a-b=#{a-b}"
-puts "a*b=#{a*b}"
-puts "a/b=#{a/b}"
+  a = gets.to_i
+  b = gets.to_i
 
-i += 1 #上の計算が一通り終了したら、iに１を足す
+  puts "a+b=#{a+b}"
+  puts "a-b=#{a-b}"
+  puts "a*b=#{a*b}"
+  puts "a/b=#{a/b}"
+
+  i += 1 #上の計算が一通り終了したら、iに１を足す
 end
 
 puts "計算を終了します"
